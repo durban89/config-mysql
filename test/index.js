@@ -7,10 +7,8 @@ let config = {
   'database': 'qeeniao'
 }
 
-let Mysql = require('../index')(config);
-let mysql = new Mysql;
-// console.log('',mysql);
-mysql.query('select * from user order by user_id DESC limit 0,10', function(err, result) {
+let mysql = require('../index')(config);
+mysql.query('SELECT 1 + 1 AS solution', function(err, result) {
   console.log(err);
   console.log(result);
 });

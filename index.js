@@ -12,6 +12,9 @@ function cm(config) {
       password: config.password || '',
       database: config.database || ''
     });
+    this.connection.connect(function(err){
+      if(err) throw err;
+    });
   }
 
   Mysql.prototype.query = function(sql, callback) {
@@ -29,5 +32,6 @@ function cm(config) {
     callback(null);
   }
 
-  return Mysql;
+  let msyqlInstance = new Mysql;
+  return msyqlInstance;
 }
