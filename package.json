@@ -11,5 +11,20 @@
     "mysql"
   ],
   "author": "dapeng",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.9.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangda89/config-mysql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhangda89/config-mysql/issues"
+  },
+  "homepage": "https://github.com/zhangda89/config-mysql#readme"
 }
